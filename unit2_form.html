@@ -5,38 +5,6 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
-      <script type="text/javascript">
-        
-        document.addEventListener('DOMContentLoaded', function() {
-          //References to each element in the form
-          const radioButtons = document.querySelectorAll('input[name="product"]');
-          const quantityInput = document.getElementById('amount');
-          const calculateTotal = document.getElementById('submit');
-          const resultElement = document.getElementById('total');
-
-          //Function to calcluate the results
-          function calculateResult() {
-            //get the selected radiobutton amount
-            const selectedRadio = document.querySelector('input[name="product"]:checked'];
-            if (!selectedRadio) {
-              alert("Please select a radio button value.");
-              return;
-            }
-
-            const radioValue = parseFloat(selectedRAdio.value);
-            const quantity = parseFloat(qunatityInput.value);
-
-            //Calculate results
-            const result = radioValue * quantity;
-
-            //Display results
-            resultElement.textContent = result;
-          }
-
-          calculateButton.addEventListener('click', calculateResult);
-        });
-        
-      </script>
     </head>
     <body>
       <p>What item do you want to purchase?</p>
@@ -52,5 +20,6 @@
         <input type="submit" value="Calculate Total"/>
       </form>
       <p id="total"></p>
+      <script src="script.js"></script>
     </body
   </html>
