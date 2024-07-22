@@ -25,5 +25,5 @@
             resultElement.textContent = result;
           }
 
-          calculateButton.addEventListener('click', calculateResult();
+          calculateButton.addEventListener('click', calculateResult);
         });
