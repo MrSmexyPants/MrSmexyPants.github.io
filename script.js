@@ -9,7 +9,7 @@
           //Function to calcluate the results
           function calculateResult() {
             //get the selected radiobutton amount
-            const selectedRadio = document.querySelector('input[name="product"]:checked'];
+            const selectedRadio = document.querySelector('input[name="product"]:checked');
             if (!selectedRadio) {
               alert("Please select a radio button value.");
               return;
