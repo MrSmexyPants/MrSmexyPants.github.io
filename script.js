@@ -3,7 +3,7 @@
           //References to each element in the form
           const radioButtons = document.querySelectorAll('input[name="product"]');
           const quantityInput = document.getElementById('amount');
-          const calculateTotal = document.getElementById('submit');
+          const calculateTotal = document.getElementById('calculate');
           const resultElement = document.getElementById('total');
 
           //Function to calcluate the results
