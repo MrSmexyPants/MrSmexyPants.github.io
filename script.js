@@ -15,8 +15,8 @@
               return;
             }
 
-            const radioValue = parseFloat(selectedRAdio.value);
-            const quantity = parseFloat(qunatityInput.value);
+            const radioValue = parseFloat(selectedRadio.value);
+            const quantity = parseFloat(quantityInput.value);
 
             //Calculate results
             const result = radioValue * quantity;
