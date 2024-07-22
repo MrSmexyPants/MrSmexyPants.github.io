@@ -5,19 +5,52 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
+      <script type="text/javascript">
+        
+        document.addEventListener('DOMContentLoaded', function() {
+          //References to each element in the form
+          const radioButtons = document.querySelectorAll('input[name="product"]');
+          const quantityInput = document.getElementById('amount');
+          const calculateTotal = document.getElementById('submit');
+          const resultElement = document.getElementById('total');
+
+          //Function to calcluate the results
+          function calculateResult() {
+            //get the selected radiobutton amount
+            const selectedRadio = document.querySelector('input[name="product"]:checked'];
+            if (!selectedRadio) {
+              alert("Please select a radio button value.");
+              return;
+            }
+
+            const radioValue = parseFloat(selectedRAdio.value);
+            const quantity = parseFloat(qunatityInput.value);
+
+            //Calculate results
+            const result = radioValue * quantity;
+
+            //Display results
+            resultElement.textContent = result;
+          }
+
+          calculateButton.addEventListener('click', calculateResult);
+        });
+        
+      </script>
     </head>
     <body>
       <p>What item do you want to purchase?</p>
       <form>
-        <input type="radio" id="rtx4090" name="product" value="RTX4090">
+        <input type="radio" id="rtx4090" name="product" value="800">
         <label for="rtx4090">RTX 4090: 800$<br></label>
-        <input type="radio" id="rtx4080" name="product" value="RTX4080">
+        <input type="radio" id="rtx4080" name="product" value="700">
         <label for="rtx4080">RTX 4080: 700$<br></label>
-        <input type="radio" id="rtx4070" name="product" value="RTX4070">
+        <input type="radio" id="rtx4070" name="product" value="600">
         <label for="rtx4070">RTX 4070: 600$<br></label>
         <label for="qty">Quantity<br></label>
         <input type="text" id="amount" name="amount"><br>
-        <input type="submit" value="Calculate Total">
+        <input type="submit" value="Calculate Total"/>
       </form>
+      <p id="total"></p>
     </body
   </html>
