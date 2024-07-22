@@ -1,5 +1,5 @@
 
-       document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
   const totalParagraph = document.getElementById("total");
 
