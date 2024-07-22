@@ -7,8 +7,14 @@
       <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+      <p>What item do you want to purchase?</p>
       <form>
-        <label for="product">RTX4090: 900$<br></label>
+        <input type="radio" id="rtx4090" name="product" value="RTX4090">
+        <label for="rtx4090">RTX 4090: 800$</label>
+        <input type="radio" id="rtx4080" name="product" value="RTX4080">
+        <label for="rtx4080">RTX 4080: 700$</label>
+        <input type="radio" id="rtx4070" name="product" value="RTX4070">
+        <label for="rtx4070">RTX 4070: 600$</label>
         <label for="qty">Quantity<br></label>
         <input type="text" id="amount" name="amount"><br>
         <input type="submit" value="Purchase">
