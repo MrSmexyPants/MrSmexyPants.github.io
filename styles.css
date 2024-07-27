@@ -17,7 +17,7 @@ body {
 
 .navbar ul {
     display: flex;
-    justify-content: center; /* Center the navigation items */
+    justify-content: space-between /* Center the navigation items */
 }
 
 .navbar li {
