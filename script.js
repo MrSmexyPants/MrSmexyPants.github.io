@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
   const totalParagraph = document.getElementById("total");
   function applyDiscount(totalCost, priceThreshold) {
-    if (totalCost > priceThreshhold){
+    if (totalCost > priceThreshold){
       totalCost = totalCost * .8;
     }
     return totalCost
