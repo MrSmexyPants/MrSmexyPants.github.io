@@ -1,12 +1,12 @@
-
 document.addEventListener("DOMContentLoaded", function() {
   const form = document.querySelector("form");
   const totalParagraph = document.getElementById("total");
+
   function applyDiscount(totalCost, priceThreshold) {
-    if (totalCost > priceThreshold){
-      totalCost = totalCost * .8;
+    if (totalCost > priceThreshold) {
+      totalCost = totalCost * 0.8;
     }
-    return totalCost
+    return totalCost;
   }
 
   form.addEventListener("submit", function(event) {
@@ -28,9 +28,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     const qty = parseInt(quantity);
 
-    const preDisc = price * qty
+    const preDisc = price * qty;
     // Calculate the total cost
-    const totalCost = applyDiscount(preDisc, 1000)
+    const totalCost = applyDiscount(preDisc, 1000);
 
     // Display the total cost
     totalParagraph.textContent = totalCost.toFixed(2);
