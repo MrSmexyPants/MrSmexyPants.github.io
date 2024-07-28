@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Form with 10 Fields/Elements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <p>What item do you want to purchase?</p>
+    <form id="purchaseForm">
+      <input type="radio" id="rtx4090" name="product" value="800">
+      <label for="rtx4090">RTX 4090: 800$<br></label>
+      <input type="radio" id="rtx4080" name="product" value="700">
+      <label for="rtx4080">RTX 4080: 700$<br></label>
+      <input type="radio" id="rtx4070" name="product" value="600">
+      <label for="rtx4070">RTX 4070: 600$<br></label>
+      <label for="qty">Quantity<br></label>
+      <input type="text" id="amount" name="amount"><br>
+      <input type="submit" id="calculate" value="Calculate Total"/>
+    </form>
+    <p id="total">0</p>
+    <script src="script.js"></script>
+  </body>
+</html>
