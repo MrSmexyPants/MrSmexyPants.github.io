@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const preDisc = price * qty;
     // Calculate the total cost
-    const totalCost = applyDiscount(preDisc, 1000);
+    const totalCost = applyDiscount(preDisc, 2000);
 
     // Display the total cost
     totalParagraph.textContent = totalCost.toFixed(2);
