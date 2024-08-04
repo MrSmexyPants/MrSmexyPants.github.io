@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F4E1C1; /* Sand Beige */
+  color: #061124; /* Dark color for readability */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4CAF50; /* Court Green */
+  padding: 10px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #FFC107; /* Volleyball Yellow */
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #00B0FF; /* Sky Blue */
+}
+
+/* Main Content Styles */
+h1 {
+  color: #D32F2F; /* Spike Red */
+  text-align: center;
+  margin-top: 20px;
+}
+
+ul {
+  background-color: #FFFFFF; /* White background for text contrast */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+a {
+  color: #00B0FF; /* Sky Blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #616161; /* Net Gray */
+}
